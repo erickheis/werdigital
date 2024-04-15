@@ -1,3 +1,3 @@
 function handleLogin(response) {
-    console.log(response);
+    localStorage.setItem("token", response.credential);
 }
