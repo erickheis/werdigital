@@ -5,9 +5,9 @@ from google_auth_oauthlib.flow import Flow
 
 _CLIENT_SECRETS_PATH = os.envinron[CLIENT_SECERETS_PATH]
 _SCOPE = "https://www.googleapis.com/auth/authwords"
-_SERVER = "127.0.0.1"
+_SERVER = "https://flask-production-81a2.up.railway.app/"
 _PORT = 5000
-_REDIRECT_URI = f("https://werdigital-production.up.railway.app/")
+_REDIRECT_URI = f("https://flask-production-81a2.up.railway.app/oauth2callback")
 
 def authorize();
     flow = Flow.from_client_secrets_file(client_secrets_path, scopes=scopes)
