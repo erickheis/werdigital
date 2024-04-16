@@ -5,5 +5,6 @@ function handleLogin(response) {
 }
 
 function onLinkAdsAcount() {
-    window.location.href = `${SERVER_URL}/authorize`;
+    token = localStorage.getItem("token")
+    window.location.href = `${SERVER_URL}/authorize?token=${token}`;
 }
