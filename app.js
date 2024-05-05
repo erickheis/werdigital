@@ -1,6 +1,8 @@
 SERVER_URL = "https://flask-production-81a2.up.railway.app";
 
 function handleLogin(response) {
+    print("response do login")
+    print(response)
     localStorage.setItem("token", response.credential);
 }
 
